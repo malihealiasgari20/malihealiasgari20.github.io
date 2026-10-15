@@ -11,9 +11,9 @@
 <meta property="og:url" content="https://malihealiasgari20.github.io/">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://malihealiasgari20.github.io/">
-<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#121417" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f6b5c'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='600' fill='%23fff' text-anchor='middle'%3EMA%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#1c2d40" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c2d40" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2d40'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='600' fill='%23fff' text-anchor='middle'%3EMA%3C/text%3E%3C/svg%3E">
 <!--
   HOW TO EDIT
   - Optionally add <meta property="og:image" content="https://malihealiasgari20.github.io/preview.png">
@@ -25,20 +25,20 @@
 <style>
 :root{
   color-scheme:light dark;
-  --bg:#fbfaf7; --surface:#ffffff; --text:#1c1d21; --muted:#5d6068;
-  --line:#e6e3dc; --accent:#0f6b5c; --accent-soft:#e3f1ee;
+  --bg:#f5f8fa; --surface:#ffffff; --text:#1c2d40; --muted:#52677a;
+  --line:#d7e1e8; --accent:#24677e; --accent-soft:#e4f1f6;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#121417; --surface:#1a1d21; --text:#ecebe7; --muted:#a3a6ad;
-    --line:#2b2f35; --accent:#5cc4b0; --accent-soft:#1d302d;
+    --bg:#142334; --surface:#1c2d40; --text:#f3f6fa; --muted:#b3c2ce;
+    --line:#365066; --accent:#79c6d6; --accent-soft:#243f52;
   }
 }
 :root[data-theme="light"]{color-scheme:light}
 :root[data-theme="dark"]{
   color-scheme:dark;
-  --bg:#121417; --surface:#1a1d21; --text:#ecebe7; --muted:#a3a6ad;
-  --line:#2b2f35; --accent:#5cc4b0; --accent-soft:#1d302d;
+  --bg:#142334; --surface:#1c2d40; --text:#f3f6fa; --muted:#b3c2ce;
+  --line:#365066; --accent:#79c6d6; --accent-soft:#243f52;
 }
 *{box-sizing:border-box}
 @media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
@@ -52,7 +52,10 @@ h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.2;m
 .skip:focus{left:16px;z-index:20;background:var(--surface);color:var(--text);padding:6px 10px;border-radius:8px}
 
 /* nav */
-nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{
+  --bg:#1c2d40; --text:#f3f6fa; --muted:#b7c9d7; --line:#38546a;
+  position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);
+}
 nav .wrap{display:flex;align-items:center;gap:20px;height:56px}
 nav .brand{font-family:Fraunces,serif;font-weight:600;text-decoration:none;color:var(--text);margin-right:auto}
 nav .links{display:flex;gap:16px;font-size:14px}
@@ -67,8 +70,14 @@ nav .links a:hover{color:var(--text)}
 }
 
 /* hero */
-.hero{padding:72px 0 40px}
+/* Navy and turquoise palette coordinated with the LinkedIn header. */
+.hero{
+  --bg:#1c2d40; --surface:#233b50; --text:#f3f6fa; --muted:#bacbd6;
+  --line:#456178; --accent:#79c6d6; --accent-soft:#243f52;
+  padding:72px 0 40px;background:var(--bg);color:var(--text);
+}
 .eyebrow{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+.hero .eyebrow::before{content:"";display:block;width:56px;height:3px;background:var(--accent);margin-bottom:20px}
 .hero h1{font-size:clamp(34px,6vw,56px);margin:10px 0 6px}
 .hero .role{font-size:17px;color:var(--muted);margin:0 0 20px}
 .hero p.lead{font-size:clamp(18px,2.4vw,21px);max-width:720px;margin:0 0 28px}
@@ -134,8 +143,8 @@ ol.pubs li{margin:0 0 12px;overflow-wrap:anywhere}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
 
 @media print{
-  :root,:root[data-theme],:root:not([data-theme="light"]){
-    --bg:#fff;--surface:#fff;--text:#000;--muted:#444;--line:#bbb;--accent:#0f6b5c;--accent-soft:#eef6f4;
+  :root,:root[data-theme],:root:not([data-theme="light"]),.hero{
+    --bg:#fff;--surface:#fff;--text:#000;--muted:#444;--line:#bbb;--accent:#24677e;--accent-soft:#edf4f7;
   }
   nav,.skip,.hero .cta,.filters,.filter-note{display:none}
   section{break-inside:auto;padding:24px 0}
