@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Malihe Aliasgari</title>
-<meta name="description" content="Malihe Aliasgari, Ph.D., Kean University: trustworthy AI for health, LLM and recommender systems for PKU, and research in information theory and privacy.">
+<meta name="description" content="Malihe Aliasgari, Ph.D., Kean University: LDPC codes and algebraic certification, information theory and privacy, and trustworthy AI for health.">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Malihe Aliasgari, Ph.D. · Trustworthy AI for Health">
-<meta property="og:description" content="Assistant Professor at Kean University: LLM and recommender systems for PKU, collaborative dementia research, and work in information theory, privacy and coding.">
+<meta property="og:title" content="Malihe Aliasgari, Ph.D. · Coding Theory, Privacy &amp; AI">
+<meta property="og:description" content="Assistant Professor at Kean University: LDPC codes and independently checkable algebraic certificates, privacy and distributed computing, and AI for PKU and cognitive health.">
 <meta property="og:url" content="https://malihealiasgari20.github.io/">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://malihealiasgari20.github.io/">
@@ -180,12 +180,14 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
 <main id="main">
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="eyebrow">Trustworthy AI for health · Information theory · Machine learning</div>
+    <div class="eyebrow">LDPC codes &amp; algebra · Information theory · Trustworthy AI</div>
     <h1>Malihe Aliasgari, Ph.D.</h1>
     <p class="role">Assistant Professor, Department of Mathematical Sciences, Kean University · Union, NJ</p>
     <p class="lead">
-      I turn rigorous mathematics into AI that people can rely on. Trained in both
-      <strong>electrical engineering</strong> and <strong>pure mathematics</strong>, I lead
+      I use rigorous mathematics to make communication and AI systems more reliable. Trained in both
+      <strong>electrical engineering</strong> and <strong>pure mathematics</strong>, I develop
+      <strong>algebraic certificates and screening methods for LDPC error-correcting codes</strong>,
+      connecting mathematical proof with the analysis of wireless communication codes. I also lead
       interdisciplinary teams building large-language-model and recommender systems for
       <strong>phenylketonuria (PKU)</strong>, and collaborate on speech- and LLM-based research on
       <strong>dementia</strong>, with safety rules and evaluation at the core.
@@ -218,6 +220,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
         <div class="kicker">For academic search committees</div>
         <ul class="tight">
           <li>Active <strong>AI-for-health</strong> research program: a published IEEE HealthCom 2024 paper on PKU food recommendation, manuscripts under review at JMIR Formative Research and Discover Artificial Intelligence, and external grant proposals to NPKUA and the Caplan Foundation.</li>
+          <li>Recent <strong>LDPC coding-theory research</strong>: independently checkable Nullstellensatz certificates, sharp local degree bounds, and linear-versus-constant separations between equivalent polynomial encodings; related work on QC-LDPC screening for wireless links.</li>
           <li>Theory foundations: three IEEE Transactions papers (Information Forensics &amp; Security 2020; Communications 2019, 2013) and two IEEE ISIT papers in privacy, distributed computing and coding theory, plus a manuscript submitted to IEEE Transactions on Information Theory.</li>
           <li>Taught 15+ courses, from calculus to <strong>Large Language Models</strong> and <strong>Deep Learning</strong>.</li>
           <li>Mentor to high-school, undergraduate and master's researchers; nominated for Kean's Faculty Research Mentor of the Year Award, Early Career Faculty category (2024).</li>
@@ -239,8 +242,14 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
 <section id="research">
   <div class="wrap">
     <h2>Research Areas</h2>
-    <p class="sub">Three research threads: reliable AI for health, trustworthy distributed computing, and the coding theory and algebra that underpin the distributed-computing work.</p>
+    <p class="sub">Three connected research threads: LDPC codes and algebraic certification, privacy and distributed computation, and trustworthy AI for health.</p>
     <div class="grid3">
+      <div class="card">
+        <h3>LDPC codes &amp; algebraic certification</h3>
+        <p>Independently checkable algebraic proofs for excluding small low-syndrome patterns in LDPC codes,
+        sharp certificate-degree bounds, and QC-LDPC screening for wireless links. Earlier work includes
+        lattice and q-ary decoding with Gr&ouml;bner bases.</p>
+      </div>
       <div class="card">
         <h3>AI &amp; ML for health</h3>
         <p>Recommender systems and LLM agents for PKU dietary management, LLM-based analysis of dementia-related
@@ -252,11 +261,6 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
         <p>Coded computation against stragglers, private and secure distributed matrix multiplication, private
         information retrieval, and differential-privacy leakage in adaptive systems, analyzed with information theory.</p>
       </div>
-      <div class="card">
-        <h3>Coding theory &amp; algebra</h3>
-        <p>Decoding lattices with Gröbner bases, label codes of lattices, algebraic decoding of q-ary codes, and
-        Nullstellensatz certificates and code selection for LDPC codes in wireless links.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -264,7 +268,48 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
 <section id="projects">
   <div class="wrap">
     <h2>Featured Projects</h2>
-    <p class="sub">Each project is described from a research angle and from a product angle.</p>
+    <p class="sub">Selected work in coding theory, information theory, and applied AI, from mathematical foundations to computational verification and research prototypes.</p>
+
+    <article class="card project" id="ldpc-project">
+      <div class="head">
+        <h3>LDPC codes: algebraic certificates &amp; wireless reliability</h3>
+        <span class="badge">Recent research</span>
+      </div>
+      <div class="meta">Coding theory · Algebraic proof complexity · Exact computation</div>
+      <p>
+        Low-density parity-check (LDPC) codes protect information against transmission errors. My recent
+        research develops <strong>independently checkable mathematical certificates</strong> proving that
+        a code has no small nonempty pattern leaving only a few parity checks unsatisfied. These statements
+        connect to minimum-distance guarantees and structural trapping-set analysis. A central finding is
+        that <strong>equivalent polynomial descriptions can require very different proof degrees</strong>.
+      </p>
+      <div class="two-lens">
+        <div class="lens">
+          <h4>Mathematical contributions</h4>
+          <ul>
+            <li><strong>Explicit Nullstellensatz certificates</strong> with degree bounded independently of block length when the support bound, syndrome bound and maximum check degree are fixed.</li>
+            <li><strong>Linear-versus-constant degree separations</strong> between counting and local encodings on structured code families, including cycle codes and array-based quasi-cyclic codes.</li>
+            <li>Sharp local bounds and extensions to minimum-distance certification.</li>
+          </ul>
+        </div>
+        <div class="lens">
+          <h4>Computation &amp; application</h4>
+          <ul>
+            <li>Certificate identities checked with <strong>exact rational arithmetic</strong> by two independent verifiers.</li>
+            <li>Computational examples on regular and irregular QC-LDPC matrices, including a <strong>5G NR base-graph lifting</strong> used as a stress test.</li>
+            <li>Related research on <strong>low-unsatisfaction screening</strong> for comparing QC-LDPC code candidates for wireless links.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stack">
+        <span>LDPC &amp; QC-LDPC codes</span><span>Nullstellensatz certificates</span><span>Proof complexity</span>
+        <span>Minimum distance</span><span>Trapping sets</span><span>Exact verification</span>
+      </div>
+      <p class="meta" style="margin-top:14px">
+        Related manuscripts: IEEE ITW 2027 (submitted); IEEE Wireless Communications Letters (under revision);
+        and an expanded journal study on sharp local bounds and a linear separation.
+      </p>
+    </article>
 
     <article class="card project">
       <div class="head">
@@ -525,10 +570,26 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
         </ul>
       </div>
       <div class="card">
-        <p><strong>Reviewer for</strong> <em>IEEE Transactions on Neural Networks and Learning Systems</em>; <em>IEEE Transactions on Information Theory</em>;
-        <em>IEEE Transactions on Information Forensics and Security</em>; <em>IEEE Transactions on Communications</em>;
-        <em>IEEE Journal on Selected Areas in Information Theory</em>; <em>IEEE Access</em>; <em>Designs, Codes and Cryptography</em>;
-        <em>Journal of Economic and Social Measurement</em>; IEEE ISIT; IEEE SPAWC; IEEE WCNC; CECNet; ISCISC.</p>
+        <h3>Reviewer for</h3>
+        <p class="meta" style="margin:14px 0 6px">Journals</p>
+        <ul class="tight">
+          <li><em>IEEE Transactions on Neural Networks and Learning Systems</em></li>
+          <li><em>IEEE Transactions on Information Theory</em></li>
+          <li><em>IEEE Transactions on Information Forensics and Security</em></li>
+          <li><em>IEEE Transactions on Communications</em></li>
+          <li><em>IEEE Journal on Selected Areas in Information Theory</em></li>
+          <li><em>IEEE Access</em></li>
+          <li><em>Designs, Codes and Cryptography</em></li>
+          <li><em>Journal of Economic and Social Measurement</em></li>
+        </ul>
+        <p class="meta" style="margin:18px 0 6px">Conferences</p>
+        <ul class="tight">
+          <li>IEEE ISIT</li>
+          <li>IEEE SPAWC</li>
+          <li>IEEE WCNC</li>
+          <li>CECNet</li>
+          <li>ISCISC</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -545,7 +606,6 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
       <div class="card"><h3>Tools</h3>
         <ul class="tight"><li>Python, MATLAB</li><li>CoCoA, Magma, Mathematica, Maple, Vensim</li><li>LaTeX, Inkscape</li><li>My teams build with Flutter, Supabase, n8n and OpenAI APIs</li></ul></div>
     </div>
-    <p class="meta" style="margin-top:20px">Languages: English, Persian, Azerbaijani, Spanish.</p>
   </div>
 </section>
 
@@ -554,7 +614,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
     <h2>Let's talk</h2>
     <p>I'm open to faculty, research-scientist and applied ML / health-tech roles, and to research collaborations on trustworthy AI for health.</p>
     <div class="cta" style="justify-content:center">
-      <a class="btn primary" href="mailto:maliasga@kean.edu">maliasga@kean.edu</a>
+      <a class="btn primary" href="mailto:malihealiasgari@gmail.com">malihealiasgari@gmail.com</a>
       <a class="btn" href="https://scholar.google.com/citations?user=zkuUq5kAAAAJ">Google Scholar</a>
       <a class="btn" href="https://www.linkedin.com/in/malihe-aliasgari-ph-d-02a73579/">LinkedIn</a>
       <a class="btn" href="cv.pdf" download="Malihe-Aliasgari-CV.pdf">CV (PDF)</a>
